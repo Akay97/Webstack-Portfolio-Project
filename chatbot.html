@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Chatbot</title>
+    <link rel="stylesheet" href="/css/chatbot.css">
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header"> >_ APPLICABLE STORE BOT</div>
+      <div class="chat-box" id="chatBox">
+        <!-- Chat messages appear here -->
+        <p class="bot-message"> Hi there! How can I help you today?</p>
+      </div>
+      <div class="command-input">
+        <input type="text" placeholder="Enter command..." id="userInput" />
+        <button id="sendBtn"></button>
+      </div>
+    </div>
+
+    <!-- Chatbot JavaScript -->
+    <script>
+      const chatBox = document.getElementById('chatBox');
+      const userInput = document.getElementById('userInput');
+      const sendBtn = document.getElementById('sendBtn');
+
+      // Function to append messages to the chat
+      function appendMessage(message, sender) {
+        const p = document.createElement('p');
+        p.className = sender === 'bot' ? 'bot-message' : 'user-message';
+        p.textContent = message;
+        chatBox.appendChild(p);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
+
+      // Dynamic chatbot response logic
+      function getBotResponse(input) {
+        input = input.toLowerCase();
+
+        if (input.includes("hello") || input.includes("hi")) {
+          return "Bot: Hi there! How can I assist you today?";
+        } else if (input.includes("how are you")) {
+          return "Bot: I'm just a bot, but I'm doing great! How about you?";
+        } else if (input.includes("time")) {
+          return `Bot: The current time is ${new Date().toLocaleTimeString()}.`;
+        } else if (input.includes("date")) {
+          return `Bot: Today's date is ${new Date().toLocaleDateString()}.`;
+        } else if (input.includes("bye")) {
+          return "Bot: Goodbye! Have a great day.";
+        } else if (input.includes("help")) {
+          return "Bot: Sure! I can tell you the time, date, or answer general questions. Just ask!";
+        } else if (input.includes("name")) {
+          return "Bot: I'm your friendly chatbot! What's your name?";
+        } else {
+          return "Bot: Hmm, I'm not sure I understand. Can you try asking something else?";
+        }
+      }
+
+      // Event Listener for Button Click
+      sendBtn.addEventListener('click', () => {
+        const userMessage = userInput.value.trim();
+        if (userMessage) {
+          appendMessage(userMessage, 'user');
+          const botResponse = getBotResponse(userMessage);
+          setTimeout(() => appendMessage(botResponse, 'bot'), 500);
+          userInput.value = '';
+        }
+      });
+
+      // Event Listener for Enter Key
+      userInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') sendBtn.click();
+      });
+    </script>
+  </body>
+</html>
