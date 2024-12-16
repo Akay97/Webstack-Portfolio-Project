@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* General Styles */
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+.chat-container {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  width: 400px;
+  height: 500px;
+  max-width: 90%;
+  max-height: 90%;
+  box-sizing: border-box;
+  background-color: #0b0b0b;
+  border: 1px solid #DB7A93;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #DB7A93;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* Chat Header */
+.chat-header {
+  color: #DB7A93;
+  padding: 10px;
+  border-bottom: 1px solid #DB7A93;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #000000;
+  text-align: center;
+}
+
+/* Chat Box */
+.chat-box {
+  height: 80%;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #050505;
+}
+
+.chat-box p {
+  margin: 10px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 18px;
+}
+
+/* User Messages: Right aligned */
+.user-message {
+  text-align: right;
+  color: #000;
+  background-color: #DB7A93;
+  padding: 10px;
+  margin-left: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #DB7A93;
+}
+
+/* Bot Messages: Left aligned */
+.bot-message {
+  text-align: left;
+  color: #DB7A93;
+  background-color: transparent;
+  margin-right: auto;
+  padding: 10px;
+  border: 1px solid #DB7A93;
+  border-radius: 10px;
+}
+
+/* Command Input Section */
+.command-input {
+  display: flex;
+  border-top: 1px solid #DB7A93;
+  background-color: #050505;
+}
+
+.command-input input {
+  flex: 1;
+  padding: 12px;
+  font-size: 18px;
+  color: #DB7A93;
+  background-color: #0b0b0b;
+  border: none;
+  outline: none;
+  border-right: 1px solid #DB7A93;
+}
+
+.command-input input::placeholder {
+  color: #DB7A93;
+}
+
+.command-input button {
+  background-color: #050505;
+  border: none;
+  color: #DB7A93;
+  cursor: pointer;
+  padding: 12px 15px;
+  box-shadow: 0 0 5px #DB7A93;
+}
+
+.command-input button:hover {
+  background-color: #0b0b0b;
+  box-shadow: 0 0 10px #DB7A93;
+}
+
+/* Send Icon */
+.command-input button::after {
+  content: '\27A4';
+  font-size: 1.2em;
+  margin-left: 5px;
+  color: #DB7A93;
+}
+
