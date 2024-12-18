@@ -17,6 +17,7 @@
     padding-right: 25px;
     height: fit-content;
     background-color: transparent;
+    user-select: none;
 }
 .welcome b {
     padding-top: 50px;
@@ -119,6 +120,7 @@ background-color: transparent;
     gap: 70px;
     justify-content: center;
     padding-top: 20px;
+    user-select: none;
 }
 .container_head ul li a {
     text-decoration: none;
@@ -163,15 +165,19 @@ background-color: transparent;
     text-decoration: none;
     color: #FDF5AC;
     padding: 20px;
-    margin-left: auto;
     margin-top: 150px;
     margin-left: 40%;
     cursor: pointer;
     border: none;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+    user-select: none;
 }
 .container a button:hover {
     color: #FBB613;
     background-color: #111111;
+    padding: 21px;
+    box-shadow: none;
+    user-select: none;
 }
 
