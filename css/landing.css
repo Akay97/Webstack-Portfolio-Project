@@ -1,18 +1,22 @@
 *{
-    background: rgb(219, 122, 147);
-    /* font-family: arial; */
+    padding: 0px;
+    margin: 0px;
 }
 
 .welcome img {
     padding-top: 55px;
     width: 90px;
     height: 100px;
-    /* padding-left: 30px; */
+    background-color: transparent;
 }
 
 .welcome {
     display: flex;
     justify-self: center;
+    padding-left: 30px;
+    padding-right: 25px;
+    height: fit-content;
+    background-color: transparent;
 }
 .welcome b {
     padding-top: 50px;
@@ -25,11 +29,15 @@
     animation-name: move;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+
 }
 .welcome b span{
     padding-right: 20px;
     gap: 30px;
-
+    background-color: transparent;
 }
 .welcome b .to {
     padding-left: 40px;
@@ -60,7 +68,7 @@
 @keyframes move {
     50% {
         transform: translateY(10px);
-        background: #DB7A93;
+        background-color: transparent;
     }
 }
 
@@ -77,12 +85,17 @@
 
 .container_head {
     position: relative;
-    background: gray;
+    /* background: gray; */
     display: flex;
     height: fit-content;
     flex-direction: column;
     width: 70rem;
     max-width: 100%;
+    background-color: transparent;
+}
+
+body .container img {
+background-color: transparent;
 }
 
 .container_head h1 {
@@ -91,32 +104,24 @@
     box-sizing:content-box;
     justify-self: center;
     padding-left: 35%;
-    /* font-family: arial; */
+    padding-top: 15px;
     font-weight: bolder;
     font-size: 36px;
-    background-color: gray;
+    background-color: transparent;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
-    /* animation: zoom 3s ease-in-out infinite alternate; */
-
+    text-shadow: 2px 2px 2px black;
 }
-/* 
-@keyframes zoom {
-    0% {font-size: 34px;}
-    50% {font-size: 35px;}
-    100% {font-size: 34px;}
-}
-*/
 
 .container_head ul{
-    background-color: gray;
+    background-color: transparent;
     display: flex;
     gap: 70px;
     justify-content: center;
+    padding-top: 20px;
 }
 .container_head ul li a {
     text-decoration: none;
-    background-color: gray;
     color: #FFC452;
     font-size: 18px;
     font-weight: bolder;
@@ -129,7 +134,10 @@
 }
 .container_head ul li {
     list-style: none;
-    background-color: gray;
+    background-color: #333131;
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: 2px solid  white;
 }
 
 .container .hero {
@@ -143,3 +151,27 @@
     padding-left: 40px;
     padding-top: 10px;
 }
+.container .hero img:hover {
+    width: 83px;
+}
+
+.container a button {
+    width: fit-content;
+    background-color: #333131;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FDF5AC;
+    padding: 20px;
+    margin-left: auto;
+    margin-top: 150px;
+    margin-left: 40%;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+.container a button:hover {
+    color: #FBB613;
+    background-color: #111111;
+}
+
