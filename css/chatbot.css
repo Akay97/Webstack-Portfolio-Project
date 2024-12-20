@@ -14,12 +14,10 @@ body {
 
 .chat-container {
   position: fixed;
-  bottom: 20px; 
-  right: 20px;
   width: 400px;
   height: 500px;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 100%;
+  max-height: 100%;
   box-sizing: border-box;
   background-color: #0b0b0b;
   border: 1px solid #DB7A93;
@@ -54,7 +52,7 @@ body {
   word-wrap: break-word;
   border-radius: 8px;
   padding: 8px 12px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* User Messages: Right aligned */
@@ -89,7 +87,7 @@ body {
 .command-input input {
   flex: 1;
   padding: 12px;
-  font-size: 18px;
+  font-size: 14px;
   color: #DB7A93;
   background-color: #0b0b0b;
   border: none;
