@@ -25,7 +25,6 @@
       const userInput = document.getElementById('userInput');
       const sendBtn = document.getElementById('sendBtn');
 
-      // Function to append messages to the chat
       function appendMessage(message, sender) {
         const p = document.createElement('p');
         p.className = sender === 'bot' ? 'bot-message' : 'user-message';
