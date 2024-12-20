@@ -10,7 +10,7 @@ unset($_SESSION['responseMessage']);
     <title>Registration Page</title>
     <link rel="stylesheet" type="text/css" href="css/signup.css" />
   </head>
-  <body>
+  <body style="background-image: url(./img/chart_bacg.jpg); background-size: cover;">
     <div class="container">
       <div class="row col-md-6 col-md-offset-3">
         <div class="panel panel-primary">
