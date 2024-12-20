@@ -29,7 +29,6 @@ body {
   color: white;
   padding: 15px;
   text-align: center;
-  border-bottom: 2px solid #2b542c;
 }
 .panel-body {
   padding: 20px;
@@ -38,14 +37,12 @@ body {
 .panel-footer {
   background-color: #f5f5f5;
   padding: 10px;
-  border-top: 1px solid #3c763d;
   color: #555;
 }
 
 /* Form Elements */
 label {
   font-weight: bold;
-  /* color: #3c763d; */
 }
 .form-control {
   border: 1px solid #ccc;
@@ -55,10 +52,7 @@ label {
   width: 100%;
   box-sizing: border-box;
 }
-.form-control:focus {
-  border-color: #3c763d;
-  box-shadow: 0 0 5px rgba(60, 118, 61, 0.5);
-}
+
 .radio-inline input {
   margin-right: 5px;
 }
@@ -79,20 +73,11 @@ label {
 
 /* Links */
 a {
-  /* color: #3c763d; */
   text-decoration: none;
 }
-/* a:hover {
-  color: #2b542c;
-  text-decoration: none;
-}  */
-
-/* Additional Spacing */
-/* br {
-  margin-bottom: 10px;
-} */
 
 .mark {
   text-align: right;
   padding:20px;
+  background-color: rgb(219, 122, 147);
 }
