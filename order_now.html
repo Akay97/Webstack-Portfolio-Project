@@ -11,21 +11,22 @@
   <body>
     <!-- Header -->
     <header class="nav-head">
+      <div class="head-content">
         <div class="head-logo">
-          <a href="#">
+          <a href="landing.html">
             <img src="img/hello.png" alt="Applicable logo" width="160" height="40">
           </a>
         </div>
         <nav>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="landing.html">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#">Order Now</a>
+              <a href="#category">Order Now</a>
             </li>
             <li class="nav-item">
-              <a href="#">My Chart</a>
+              <a href="#">My Cart</a>
             </li>
             <li class="nav-item">
               <a href="#">Contact</a>
@@ -35,653 +36,202 @@
             </li>
           </ul>
         </nav>
+      </div>
     </header>
     <!-- Main -->
     <main>
       <!-- Hero section -->
-      <section class="hero-section">
-        <div class="container">
-          <div class="section-body">
-            <section class="section-inner">
-              <h2 class="section-title">Home of all Satisfactory Appliances</h2>
-              <a href="#" class="button">Make Orders</a>
-            </section>
+      <section class="hero_section">
+        <div class="hero_outer">
+          <div class="hero_content">
+            <h2>Home of all Satisfactory Appliances</h2>
+            <a href="#category">Make Orders</a>
           </div>
         </div>
       </section>
       <!-- Appliances Categories -->
-      <section id="services" class="section">
-        <div class="container">
-          <header class="appliances-header">
-            <h2 class="section-title">Appliances</h2>
-            <p class="section-tagline">categories</p>
+      <section class="cat_section">
+        <div class="cat_cont">
+          <header class="cat_head">
+            <h2 id="category">Appliances</h2>
+            <p>categories</p>
           </header>
-          <div class="section-body">
+          <div class="sec-body">
             <ul class="row">
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title"><a href="#">Home</a></h3>
-                </div>
+              <li class="cat_list">
+                <h3><a href="#home_app">Home</a></h3>
               </li>
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title"><a href="#">Office</a></h3>
-                </div>
+              <li class="cat_list">
+                <h3><a href="#office_app">Office</a></h3>
               </li>
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title"><a href="#">Commercial</a></h3>
-                </div>
+              <li class="cat_list">
+                <h3><a href="#commercial_app">Commercial</a></h3>
               </li>
-            </ul>
-            <ul class="row">
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title"><a href="#">Industrial</a></h3>
-                </div>
+              <li class="cat_list">
+                <h3><a href="#industrial_app">Industrial</a></h3>
               </li>
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title"><a href="#">Medical</a></h3>
-                </div>
+              <li class="cat_list">
+                <h3><a href="#medical_app">Medical</a></h3>
               </li>
-              <li class="col-1-3">
-                <div class="card-services">
-                  <h3 class="card-title"><a href="#">Automotive</a></h3>
-                </div>
+              <li class="cat_list">
+                <h3><a href="#automotive_app">Automotive</a></h3>
               </li>
             </ul>
           </div>
         </div>
       </section>
       <!-- Product list -->
-      <section id="works" class="section" data-section-theme="dark">
-        <div class="container">
-          <header class="section-header">
-            <!-- <h2 class="section-title"></h2> -->
-            <p class="section-tagline">Home Appliances</p>
+      <section class="prod-sec">
+        <div class="prod-cont">
+          <header class="prod-head">
+            <p id="home_app">Home Appliances</p>
           </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+        </div>
+        <div class="prod-grid">
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
+          </div>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
         </div>
-        <div class="container">
-          <header class="section-header">
-            <!-- <h2 class="section-title"></h2> -->
-            <p class="section-tagline">Office Appliances</p>
+        <div class="prod-cont">
+          <header class="prod-head">
+            <p id="office_app">Office Appliances</p>
           </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </ div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+        </div>
+        <div class="prod-grid">
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
+          </div>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
         </div>
-        <div class="container">
-          <header class="section-header">
-            <!-- <h2 class="section-title"></h2> -->
-            <p class="section-tagline">Commercial Appliances</p>
+        <div class="prod-cont">
+          <header class="prod-head">
+            <p id="commercial_app">Commercial Appliances</p>
           </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+        </div>
+        <div class="prod-grid">
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
+          </div>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
         </div>
-        <div class="container">
-          <header class="section-header">
-            <!-- <h2 class="section-title"></h2> -->
-            <p class="section-tagline">Industrial Appliances</p>
+        <div class="prod-cont">
+          <header class="prod-head">
+            <p id="industrial_app">Industrial Appliances</p>
           </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+        </div>
+        <div class="prod-grid">
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
+          </div>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
         </div>
-        <div class="container">
-          <header class="section-header">
-            <!-- <h2 class="section-title"></h2> -->
-            <p class="section-tagline">Medical Appliances</p>
+        <div class="prod-cont">
+          <header class="prod-head">
+            <p id="medical_app">Medical Appliances</p>
           </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+        </div>
+        <div class="prod-grid">
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
+          </div>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
         </div>
-        <div class="container">
-          <header class="section-header">
-            <!-- <h2 class="section-title"></h2> -->
-            <p class="section-tagline">Automotive Appliances</p>
+        <div class="prod-cont">
+          <header class="prod-head">
+            <p id="automotive_app">Automotive Appliances</p>
           </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+        </div>
+        <div class="prod-grid">
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-01.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Interior Design</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-02.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Web Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-work">
-                  <div class="card-outer">
-                    <div class="card-image">
-                      <img src="images/pic-work-03.jpg" alt="">
-                    </div>
-                    <div class="card-inner">
-                      <h3 class="card-title"><a href="#">Personal Development</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
+          </div>
+          <div class="Product">
+            <img src="./img/Television.jpg" alt="Product" height="450px" width="420px">
+            <h3>Product title</h3>
           </div>
         </div>
       </section>
       <!-- Testimonials section -->
-      <section id="testimonials" class="section">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title">Testimonials</h2>
-            <p class="section-tagline">What our customer says</p>
+      <section class="testm_sec">
+        <div class="testm_cont">
+          <header class="testm_head">
+            <h2>Testimonials</h2>
+            <p>What our customer says</p>
           </header>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="images/pic-person-01.jpg" alt="Yuri Y. avatar" width="100" height="100" class="card-avatar">
+          <div class="testm_body">
+            <ul>
+              <li>
+                <article>
+                  <img src="./img/man_wit_board_ver.png" alt="customer avatar" width="100" height="100" class="card-avatar">
                   <blockquote class="card-quote">
                     <p>I am completely blown away. Thanks to Techium, we've just launched our 5th website!
-                      <cite>Yuri Y.</cite>
+                      <cite>Customer A.</cite>
                     </p>
                   </blockquote>
                 </article>
               </li>
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="images/pic-person-02.jpg" alt="Dorrie S. avatar" width="100" height="100" class="card-avatar">
+              <li>
+                <article>
+                  <img src="./img/man_wit_board_ver.png" alt="customer avatar" width="100" height="100" class="card-avatar">
                   <blockquote class="card-quote">
                     <p>Thank you so much for your help. Techium company is awesome!
-                      <cite>Dorrie S.</cite>
+                      <cite>Customer B.</cite>
                     </p>
                   </blockquote>
                 </article>
               </li>
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="images/pic-person-03.jpg" alt="Sven H. avatar" width="100" height="100" class="card-avatar">
+              <li>
+                <article>
+                  <img src="./img/man_wit_board_ver.png" alt="customer avatar" width="100" height="100" class="card-avatar">
                   <blockquote class="card-quote">
                     <p>I love your system. Definitely worth the investment. I'd be lost without Techium company.
-                      <cite>Sven H.</cite>
-                    </p>
-                  </blockquote>
-                </article>
-              </li>
-            </ul>
-          </div>
-          <div class="section-body">
-            <ul class="row">
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="images/pic-person-01.jpg" alt="Yuri Y. avatar" width="100" height="100" class="card-avatar">
-                  <blockquote class="card-quote">
-                    <p>I am completely blown away. Thanks to Techium, we've just launched our 5th website!
-                      <cite>Yuri Y.</cite>
-                    </p>
-                  </blockquote>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="images/pic-person-02.jpg" alt="Dorrie S. avatar" width="100" height="100" class="card-avatar">
-                  <blockquote class="card-quote">
-                    <p>Thank you so much for your help. Techium company is awesome!
-                      <cite>Dorrie S.</cite>
-                    </p>
-                  </blockquote>
-                </article>
-              </li>
-              <li class="col-1-3">
-                <article class="card-testimonial">
-                  <img src="images/pic-person-03.jpg" alt="Sven H. avatar" width="100" height="100" class="card-avatar">
-                  <blockquote class="card-quote">
-                    <p>I love your system. Definitely worth the investment. I'd be lost without Techium company.
-                      <cite>Sven H.</cite>
+                      <cite>Customer C.</cite>
                     </p>
                   </blockquote>
                 </article>
@@ -692,11 +242,11 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer" data-section-theme="dark">
-      <div  class="container">
-        <div class="row">
+    <footer>
+      <div  class="foot_cont">
+        <div class="foot_row">
           <div class="col-1-2">
-            <img src="images/logo-white.png" alt="Techium logo" width="160" height="40">
+            <img src="./img/hello.png" alt="Applicable logo" width="100" height="100">
             <address class="footer-address">
               972 Mission St<br>
               San Francisco, CA<br>
@@ -706,7 +256,7 @@
           <div class="col-1-2">
             <ul class="social nav">
               <li class="social-item nav-item">
-                <a href="https://www.facebook.com/HolbertonSchool/" class="social-link">
+                <a href="#" class="social-link">
                   <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
                     <title>
                       Facebook icon
@@ -716,7 +266,7 @@
                 </a>
               </li>
               <li class="social-item nav-item">
-                <a href="https://twitter.com/holbertonschool" class="social-link">
+                <a href="#" class="social-link">
                   <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
                     <title>
                       Twitter icon
@@ -726,7 +276,7 @@
                 </a>
               </li>
               <li class="social-item nav-item">
-                <a href="https://www.instagram.com/holbertonschool/" class="social-link">
+                <a href="#" class="social-link">
                   <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
                     <title>
                       Instagram icon
