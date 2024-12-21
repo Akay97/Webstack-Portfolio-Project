@@ -145,6 +145,10 @@ background-color: transparent;
     color: #FFC452;
     font-size: 18px;
     font-weight: bolder;
+    background-color: #333131;
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: 2px solid  white;
 }
 .container_head ul li a:hover {
     color: #FDF5AC;
@@ -154,10 +158,6 @@ background-color: transparent;
 }
 .container_head ul li {
     list-style: none;
-    background-color: #333131;
-    padding: 7px 10px;
-    border-radius: 7px;
-    border: 2px solid  white;
 }
 
 .container .hero {
