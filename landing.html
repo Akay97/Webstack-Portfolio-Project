@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="./css/landing.css">
     <link rel="icon" type="image/png" href="./img/O.png">
-
     <title>Applicable Store</title>
 </head>
 <body style="background-image: url(./img/chart_bacg.jpg); background-size: cover;">
@@ -33,7 +32,7 @@
              <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="order_now.html">Order Now</a></li>
-                <li><a href="#">My Chart</a></li>
+                <li><a href="#">My Cart</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About</a></li>
              </ul>
@@ -42,10 +41,26 @@
         <div class="button">
             <a href="order_now.html"><button>Check the store</button></a>
         </div>
-        <!-- <img src="./img/hello.png" alt="hello"> -->
     </div>
-    <!-- <script>
-        alert('Welcome to Applicable store. \n A home for all kinds of appliances')
-    </script> -->
+
+    <!-- Add a customized welcome message after a successful login -->
+    <div id="toast" class="toast"></div>
+    <script>
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.className = `toast ${type}`;
+            toast.style.display = 'block';
+                
+            // Setting a display time for the message
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 6000);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showToast('Login successful! Welcome to Applicable Store!');
+        });
+    </script>
 </body>
 </html>
