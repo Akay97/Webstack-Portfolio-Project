@@ -49,6 +49,77 @@
           </div>
         </div>
       </section>
+
+      <!-- Order list -->
+      <h1>Your Cart</h1>
+      <table id="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <h2 id="cart-total">Total: $0</h2>
+      
+      <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];   
+        // Render the cart
+        function renderCart() {
+          const tableBody = document.querySelector('#cart-table tbody');
+          tableBody.innerHTML = '';
+          let total = 0;
+    
+          cart.forEach((item, index) => {
+            const itemTotal = item.price * item.quantity;
+            total += itemTotal;
+            tableBody.innerHTML += `
+              <tr>
+                <td><img src="${item.img}" alt="${item.name}" width="50"> ${item.name}</td>
+                <td>$${item.price}</td>
+                <td>
+                  <input type="number" value="${item.quantity}" min="1" max="10" data-index="${index}" class="quantity-input">
+                </td>
+                <td>$${itemTotal.toFixed(2)}</td>
+                <td>
+                  <button class="remove-btn" data-index="${index}">Remove</button>
+                </td>
+              </tr>
+            `;
+          });
+    
+          document.getElementById('cart-total').textContent = `Total: $${total.toFixed(2)}`;
+        }
+    
+        // Update Quantity
+        document.addEventListener('input', (event) => {
+          if (event.target.classList.contains('quantity-input')) {
+            const index = event.target.dataset.index;
+            cart[index].quantity = parseInt(event.target.value);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart();
+          }
+        });
+    
+        // Remove Item
+        document.addEventListener('click', (event) => {
+          if (event.target.classList.contains('remove-btn')) {
+            const index = event.target.dataset.index;
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart();
+          }
+        });
+    
+        // Initial Render
+        renderCart();
+      </script>
+
+
       <!-- Testimonials section -->
       <section class="testm_sec">
         <div class="testm_cont">
