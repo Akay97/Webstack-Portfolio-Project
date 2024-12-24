@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="./css/logout.css">
     <link rel="icon" type="image/png" href="./img/O.png">
     <title>Applicable Store</title>
+
 </head>
 <body style="background-image: url(./img/chart_bacg.jpg); background-size: cover;">
     <div class="welcome">
@@ -45,22 +47,8 @@
 
     <!-- Add a customized welcome message after a successful login -->
     <div id="toast" class="toast"></div>
-    <script>
-        function showToast(message, type = 'success') {
-            const toast = document.getElementById('toast');
-            toast.textContent = message;
-            toast.className = `toast ${type}`;
-            toast.style.display = 'block';
-                
-            // Setting a display time for the message
-            setTimeout(() => {
-                toast.style.display = 'none';
-            }, 6000);
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            showToast('Login successful! Welcome to Applicable Store!');
-        });
-    </script>
+    <script src="./js/toast.js"></script>
+    <!-- User logout -->
+    <script src="./js/logout.js"></script>
 </body>
 </html>
