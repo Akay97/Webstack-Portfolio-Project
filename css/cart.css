@@ -228,3 +228,40 @@ footer ul li a:hover {
   border: 2px solid #FFC452;
   box-shadow: none;
 }
+
+h1, h2 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #FDF5AC;
+}
+
+table th, table td {
+  border: 1px solid #6e6c6c;
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  max-height: 50px;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+button {
+  background-color: rgb(48, 87, 48);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(23, 49, 23);
+}
