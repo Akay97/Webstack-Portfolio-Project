@@ -161,12 +161,58 @@ main .hero_section .hero_outer .hero_content a:hover {
     background-color: #272626;
 }
 
+/* styling the order button */
+.Product p {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #FDF5AC;
+    margin-right: 10px;
+  }
+  
+  input[type="number"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .add-to-cart {
+    padding: 7px 18px;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    background-color: #FDF5AC;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #ebdf7b;
+    transform: translateY(-2px);
+  }
+  
+  .add-to-cart:active {
+    background-color: #d4ca6e;
+    transform: translateY(0);
+  }
+
 .prod-sec {
     background-color: #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .prod-sec .prod-cont {
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 30px;
 }
 .prod-sec .prod-cont p {
     color: #FDF5AC;
