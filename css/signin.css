@@ -62,4 +62,46 @@ p a {
   text-decoration: none;
 }
 
+.chatbot-button {
+  position: fixed;
+  bottom: 70px;
+  right: 90px;
+  width: 60px;
+  height: 60px;
+  background-color: #CF5372;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
 
+.chatbot-button:hover {
+  background-color: #cc3057;
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 115px;
+  right: 135px;
+  width: 350px;
+  height: 500px;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #CF5372;
+  border-radius: 8px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  background-color: #CF5372;
+}
+
+.chatbot-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
