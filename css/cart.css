@@ -229,7 +229,7 @@ footer ul li a:hover {
   box-shadow: none;
 }
 
-h1, h2 {
+.cart_h1, .cart_h2 {
   text-align: center;
 }
 
@@ -246,9 +246,9 @@ table th, table td {
   text-align: center;
 }
 
-img {
+/* img {
   max-height: 50px;
-}
+} */
 
 input[type="number"] {
   width: 50px;
