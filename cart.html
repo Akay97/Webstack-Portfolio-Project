@@ -65,6 +65,11 @@
         <tbody></tbody>
       </table>
       <h2 id="cart-total" class="cart_h2">Total: $0</h2>
+      
+      <!-- Implementing a checkout button -->
+      <div class="check">
+        <button id="checkout-btn" class="checkout-btn">Checkout Now</button>
+      </div>
 
       <!-- Testimonials section -->
       <section class="testm_sec">
@@ -117,6 +122,7 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
     <footer>
       <div  class="foot_cont">
@@ -186,9 +192,9 @@
       </div>
     </footer>
 
+    <!-- script -->
     <script>
       let cart = JSON.parse(localStorage.getItem('cart')) || [];   
-      // Render the cart
       function renderCart() {
         const tableBody = document.querySelector('#cart-table tbody');
         tableBody.innerHTML = '';
@@ -215,7 +221,7 @@
         document.getElementById('cart-total').textContent = `Total: $${total.toFixed(2)}`;
       }
   
-      // Update Quantity
+      // Update Quantity of item selected from the product list
       document.addEventListener('input', (event) => {
         if (event.target.classList.contains('quantity-input')) {
           const index = event.target.dataset.index;
@@ -225,7 +231,7 @@
         }
       });
   
-      // Remove Item
+      // Remove Item from the cart
       document.addEventListener('click', (event) => {
         if (event.target.classList.contains('remove-btn')) {
           const index = event.target.dataset.index;
@@ -235,8 +241,13 @@
         }
       });
   
-      // Initial Render
       renderCart();
+    </script>
+
+    <script>
+            document.getElementById('checkout-btn').addEventListener('click', () => {
+        window.location.href = 'checkout.html';
+      });
     </script>
 
   </body>
