@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="./css/checkout.css">
+</head>
+<body>
+  <div class="checkout-container">
+    <h1>Checkout</h1>
+    <form id="checkout-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Delivery Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+      <label for="phone">Contact Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden">Order submitted successfully! Kindly check your mail for further information regarding the payment and delivery date and time.</div>
+
+  <script>
+    const checkoutForm = document.getElementById('checkout-form');
+    const toast = document.getElementById('toast');
+
+    checkoutForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.body.innerHTML += `<div class="ribbon"></div>`;
+
+      // Show toast notification
+      setTimeout(() => {
+        toast.classList.remove('hidden');
+        toast.classList.add('show');
+      }, 500);
+
+      setTimeout(() => {
+        toast.classList.remove('show');
+        toast.classList.add('hidden');
+        window.location.href = 'thankyou.html';
+      }, 4000);
+    });
+  </script>
+</body>
+</html>
