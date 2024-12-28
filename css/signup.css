@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -15,7 +15,7 @@ body {
   padding-bottom: 90px;
 }
 
-/* Panel Styles */
+/* Panel Styling */
 .panel-primary {
   border: 1px solid rgb(219, 122, 147);
   border-radius: 5px;
@@ -40,7 +40,7 @@ body {
   color: #555;
 }
 
-/* Form Elements */
+/* Form Elements styling */
 label {
   font-weight: bold;
 }
@@ -57,7 +57,7 @@ label {
   margin-right: 5px;
 }
 
-/* Buttons */
+/* The Buttons styling */
 .btn-primary {
   background-color: rgb(219, 122, 147);
   color: white;
@@ -71,7 +71,6 @@ label {
   background-color: #a12041;
 }
 
-/* Links */
 a {
   text-decoration: none;
 }

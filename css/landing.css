@@ -3,6 +3,7 @@
     margin: 0px;
 }
 
+/* Styling the toast / pop up message */
 .toast {
     position: fixed;
     top: 20px;
@@ -21,6 +22,7 @@
     background-color: red;
 }
 
+/* The welcome image */
 .welcome img {
     padding-top: 55px;
     width: 90px;
@@ -28,6 +30,7 @@
     background-color: transparent;
 }
 
+/* The welcome text */
 .welcome {
     display: flex;
     justify-self: center;
@@ -91,6 +94,7 @@
     }
 }
 
+/* The nav and CTA container */
 .container {
     display: flex;
     background: whitesmoke;
@@ -102,6 +106,7 @@
     flex-direction:column;
 }
 
+/* The head of the container */
 .container_head {
     position: relative;
     /* background: gray; */
@@ -132,6 +137,7 @@ background-color: transparent;
     text-shadow: 2px 2px 2px black;
 }
 
+/* The nav bar */
 .container_head ul{
     background-color: transparent;
     display: flex;

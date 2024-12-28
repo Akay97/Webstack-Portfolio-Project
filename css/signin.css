@@ -1,3 +1,4 @@
+/* General styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -8,6 +9,7 @@ body {
   margin: 0;
 }
 
+/* The form container */
 .container {
   background-color: #fff;
   padding: 30px;
@@ -62,6 +64,7 @@ p a {
   text-decoration: none;
 }
 
+/* Styling the chatbot trigger button */
 .chatbot-button {
   position: fixed;
   bottom: 70px;
