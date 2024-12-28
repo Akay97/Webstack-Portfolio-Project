@@ -1,0 +1,91 @@
+/* General styling */
+body {
+  background-color: #292727;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.checkout-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Styling the form */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+form input, form textarea, form button {
+  width:94%;
+  max-width: 94%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background: #154420;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+form button:hover {
+  background: #0e3015;
+}
+
+.ribbon {
+  position: fixed;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 50px;
+  background: #ffc107;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: ribbonFall 1.5s forwards;
+}
+
+@keyframes ribbonFall {
+  to {
+    top: 20px;
+  }
+}
+
+.toast {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 20px;
+  background: #28a745;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.toast.show {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.toast.hidden {
+  bottom: -100px;
+  opacity: 0;
+}
