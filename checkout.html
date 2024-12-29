@@ -26,28 +26,15 @@
     </form>
   </div>
 
-  <!-- Toast Notification -->
-  <div id="toast" class="toast hidden">Order submitted successfully! Kindly check your mail for further information regarding the payment and delivery date and time.</div>
-
   <script>
     const checkoutForm = document.getElementById('checkout-form');
-    const toast = document.getElementById('toast');
-
+    
     checkoutForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      document.body.innerHTML += `<div class="ribbon"></div>`;
-
-      // Show toast notification
-      setTimeout(() => {
-        toast.classList.remove('hidden');
-        toast.classList.add('show');
-      }, 500);
 
       setTimeout(() => {
-        toast.classList.remove('show');
-        toast.classList.add('hidden');
         window.location.href = 'thankyou.html';
-      }, 4000);
+      }, 1000);
     });
   </script>
 </body>
